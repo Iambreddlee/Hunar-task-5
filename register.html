@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archimedes Hub</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex flex-col min-h-screen">
+    <header class="bg-blue-900 py-4">
+        <div class="container mx-auto px-4">
+            <h1 class="text-2xl font-bold text-white">Archimedes Hub</h1>
+            <nav class="mt-4">
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="text-white hover:text-blue-500">Home</a></li>
+                    <li><a href="about.html" class="text-white hover:text-blue-500">About Us</a></li>
+                    <li><a href="register.html" class="text-white hover:text-blue-500">Register</a></li>
+                    <li><a href="contact.html" class="text-white hover:text-blue-500">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container mx-auto px-4 py-8 flex-1">
+        <section id = "reg-cont" class="bg-white shadow-md rounded-lg p-8">
+            <h2 id = "reg-text" class="text-2xl font-bold text-gray-800 mb-4">Register for a Course</h2>
+            <form id="reg-form" class="space-y-4">
+                <div>
+                    <label for="name" class="block text-gray-700">Name:</label>
+                    <input type="text" id="name" name="name" class="border border-gray-300 px-3 py-2 rounded-md w-full focus:outline-none focus:border-blue-500" required>
+                </div>
+                <div>
+                    <label for="email" class="block text-gray-700">Email:</label>
+                    <input type="email" id="email" name="email" class="border border-gray-300 px-3 py-2 rounded-md w-full focus:outline-none focus:border-blue-500" required>
+                </div>
+                <div>
+                    <label for="course" class="block text-gray-700">Select Course:</label>
+                    <select id="course" name="course" class="border border-gray-300 px-3 py-2 rounded-md w-full focus:outline-none focus:border-blue-500" required>
+                        <option value="">-- Select a Course --</option>
+                        <option value="data_science">Data Science</option>
+                        <option value="full_stack">Full Stack Development</option>
+                        <option value="dsa">DSA (Data Structures and Algorithms)</option>
+                    </select>
+                </div>
+                <div>
+                    <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-block">Register</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="bg-blue-900 text-white text-center py-4">
+        <p class="text-white">© 2024 Archimedes Hub. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById("reg-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the form from submitting
+    
+            // Get form data
+            var formData = new FormData(this);
+    
+            // Alternatively, you can access each form element individually
+            let name = formData.get('name');
+            let email = formData.get('email');
+            let course = formData.get('course');
+
+            let reg_text = document.getElementById('reg-text');
+            reg_text.textContent = 'Registration Sucessful';
+            
+            // Deleting the form from cont
+            let cont = document.getElementById('reg-cont');
+            let form = document.getElementById('reg-form')
+            if(form){
+                cont.removeChild(form);
+            }
+            
+            // Adding or appending link for course
+            let courselink = document.createElement('a')
+            pathname = 'courses/'+ course + '.html';
+            courselink.href = pathname;
+            courselink.textContent = 'Go to the course page';
+            courselink.classList.add('text-blue-500', 'hover:text-blue-700', 'block', 'mt-4');
+            cont.appendChild(courselink);
+        });
+        
+    </script>
+</body>
+</html>

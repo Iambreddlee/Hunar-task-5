@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Stack Development Course - Archimedes Hub</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .aspect-1-1 {
+            padding: 20px;
+        }
+
+        .aspect-1-1 img {
+            width: 100%;
+            max-height: 40vh;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 flex flex-col min-h-screen">
+    <header class="bg-blue-900 text-white py-4 shadow">
+        <div class="container mx-auto px-4">
+            <h1 class="text-2xl font-bold ">Archimedes Hub</h1>
+            <nav class="mt-4">
+                <ul class="flex space-x-4">
+                    <li><a href="../index.html" class="text-white hover:text-blue-500">Home</a></li>
+                    <li><a href="../about.html" class="text-white hover:text-blue-500">About Us</a></li>
+                    <li><a href="../register.html" class="text-white hover:text-blue-500">Register</a></li>
+                    <li><a href="../contact.html" class="text-white hover:text-blue-500">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container mx-auto px-4 py-8 flex-1">
+        <section class="bg-white shadow-md rounded-lg p-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Full Stack Development Course</h2>
+            <div class="aspect-1-1 mb-4 max-w-full sm:max-w-xs mx-auto">
+                <img src="../assets/images/full_stack.jpg.png" alt="Full Stack Development Course" class="rounded-md">
+            </div>
+            <p class="text-gray-700 mb-4">Master the art of Full Stack Development with our comprehensive course. Learn front-end and back-end development skills to build complete web applications.</p>
+
+            <h3 class="text-xl font-semibold text-gray-800 mt-6">Course Overview</h3>
+            <p class="text-gray-700 mt-2">In this course, you will cover:</p>
+            <ul class="list-disc ml-6 mt-4 text-gray-700">
+                <li><a href="https://www.geeksforgeeks.org/introduction-to-full-stack-development/" target="_blank" class="text-blue-500 hover:text-blue-700">Introduction to Full Stack Development</a></li>
+                <li><a href="https://www.geeksforgeeks.org/frontend-technologies-in-web-development/" target="_blank" class="text-blue-500 hover:text-blue-700">Front-end technologies</a></li>
+                <li><a href="https://www.geeksforgeeks.org/backend-technologies-in-web-development/" target="_blank" class="text-blue-500 hover:text-blue-700">Back-end technologies</a></li>
+                <li><a href="https://www.geeksforgeeks.org/database-management-systems/" target="_blank" class="text-blue-500 hover:text-blue-700">Database Management Systems</a></li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-800 mt-6">Course Content</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
+                <div>
+                    <h4 class="text-lg font-bold text-gray-800">Module 1: Front-end Development</h4>
+                    <p class="text-gray-700 mt-2">Learn about front-end technologies and frameworks used in modern web development.</p>
+                    <ul class="list-disc ml-6 mt-2 text-gray-700">
+                        <li><a href="https://www.geeksforgeeks.org/html-introduction/" target="_blank" class="text-blue-500 hover:text-blue-700">Lecture 1: Introduction to HTML</a></li>
+                        <li><a href="https://www.geeksforgeeks.org/css-introduction/" target="_blank" class="text-blue-500 hover:text-blue-700">Lecture 2: Introduction to CSS</a></li>
+                        <li><a href="https://www.geeksforgeeks.org/javascript-introduction/" target="_blank" class="text-blue-500 hover:text-blue-700">Lecture 3: Introduction to JavaScript</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold text-gray-800">Module 2: Back-end Development</h4>
+                    <p class="text-gray-700 mt-2">Explore server-side programming and databases for building dynamic web applications.</p>
+                    <ul class="list-disc ml-6 mt-2 text-gray-700">
+                        <li><a href="https://www.geeksforgeeks.org/introduction-to-database-systems/" target="_blank" class="text-blue-500 hover:text-blue-700">Lecture 1: Introduction to Databases</a></li>
+                        <li><a href="https://www.geeksforgeeks.org/php-introduction/" target="_blank" class="text-blue-500 hover:text-blue-700">Lecture 2: Introduction to PHP</a></li>
+                        <li><a href="https://www.geeksforgeeks.org/introduction-to-node-js/" target="_blank" class="text-blue-500 hover:text-blue-700">Lecture 3: Introduction to Node.js</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-blue-900 text-white text-center py-4">
+        <p class="text-white">© 2024 Archimedes Hub. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

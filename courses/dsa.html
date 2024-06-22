@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA Course - Archimedes Hub</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .aspect-1-1 {
+            padding: 20px;
+        }
+
+        .aspect-1-1 img {
+            width: 100%;
+            max-height: 40vh;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 flex flex-col min-h-screen">
+    <header class="bg-blue-900 text-white py-4 shadow">
+        <div class="container mx-auto px-4">
+            <h1 class="text-2xl font-bold ">Archimedes Hub</h1>
+            <nav class="mt-4">
+                <ul class="flex space-x-4">
+                    <li><a href="../index.html" class="text-white hover:text-blue-500">Home</a></li>
+                    <li><a href="../about.html" class="text-white hover:text-blue-500">About Us</a></li>
+                    <li><a href="../register.html" class="text-white hover:text-blue-500">Register</a></li>
+                    <li><a href="../contact.html" class="text-white hover:text-blue-500">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container mx-auto px-4 py-8 flex-1">
+        <section class="bg-white shadow-md rounded-lg p-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">DSA Course</h2>
+            <div class="aspect-1-1 mb-4 max-w-full sm:max-w-xs mx-auto">
+                <img src="../assets/images/dsa.jpg.png" alt="DSA Course" class="rounded-md">
+            </div>
+            <p class="text-gray-700 mb-4">Explore the fundamentals of Data Structures and Algorithms with our comprehensive course. Master essential concepts and problem-solving techniques.</p>
+
+            <h3 class="text-xl font-semibold text-gray-800 mt-6">Course Overview</h3>
+            <p class="text-gray-700 mt-2">In this course, you will cover:</p>
+            <ul class="list-disc ml-6 mt-4 text-gray-700">
+                <li><a href="https://www.geeksforgeeks.org/data-structures/" target="_blank" class="text-blue-500 hover:text-blue-700">Fundamental data structures</a></li>
+                <li><a href="https://www.geeksforgeeks.org/algorithms/" target="_blank" class="text-blue-500 hover:text-blue-700">Classic algorithms</a></li>
+                <li><a href="https://www.geeksforgeeks.org/searching-algorithms/" target="_blank" class="text-blue-500 hover:text-blue-700">Search and sorting algorithms</a></li>
+                <li><a href="https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/" target="_blank" class="text-blue-500 hover:text-blue-700">Graph algorithms</a></li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-800 mt-6">Course Content</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
+                <div>
+                    <h4 class="text-lg font-bold text-gray-800">Module 1: Introduction to DSA</h4>
+                    <p class="text-gray-700 mt-2">Understand the importance of data structures and algorithms in computer science.</p>
+                    <ul class="list-disc ml-6 mt-2 text-gray-700">
+                        <li><a href="https://www.geeksforgeeks.org/introduction-to-data-structures/" target="_blank" class="text-blue-500 hover:text-blue-700">Lecture 1: Introduction to Data Structures</a></li>
+                        <li><a href="https://www.geeksforgeeks.org/analysis-of-algorithms/" target="_blank" class="text-blue-500 hover:text-blue-700">Lecture 2: Analysis of Algorithms</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold text-gray-800">Module 2: Arrays and Sorting</h4>
+                    <p class="text-gray-700 mt-2">Learn about arrays, their implementation, and different sorting algorithms.</p>
+                    <ul class="list-disc ml-6 mt-2 text-gray-700">
+                        <li><a href="https://www.geeksforgeeks.org/array-data-structure/" target="_blank" class="text-blue-500 hover:text-blue-700">Lecture 1: Arrays</a></li>
+                        <li><a href="https://www.geeksforgeeks.org/sorting-algorithms/" target="_blank" class="text-blue-500 hover:text-blue-700">Lecture 2: Sorting Algorithms</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-blue-900 text-white text-center py-4">
+        <p class="text-white">© 2024 Archimedes Hub. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

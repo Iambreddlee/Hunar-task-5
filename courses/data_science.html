@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science Course - Archimedes Hub</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .aspect-1-1 {
+            
+            padding: 20px;
+        }
+
+        .aspect-1-1 img {
+           
+            width: 100%;
+            max-height: 40vh;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 flex flex-col min-h-screen">
+    <header class="bg-blue-900 text-white py-4 shadow">
+        <div class="container mx-auto px-4">
+            <h1 class="text-2xl font-bold ">Archimedes Hub</h1>
+            <nav class="mt-4">
+                <ul class="flex space-x-4">
+                    <li><a href="../index.html" class="text-white hover:text-blue-500">Home</a></li>
+                    <li><a href="../about.html" class="text-white hover:text-blue-500">About Us</a></li>
+                    <li><a href="../register.html" class="text-white hover:text-blue-500">Register</a></li>
+                    <li><a href="../contact.html" class="text-white hover:text-blue-500">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container mx-auto px-4 py-8 flex-1">
+        <section class="bg-white shadow-md rounded-lg p-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Data Science Course</h2>
+            <div class="aspect-1-1 mb-4 max-w-full sm:max-w-xs mx-auto">
+                <img src="../assets/images/data_science.jpg.jpg" alt="Data Science" class="rounded-md">
+            </div>
+            <p class="text-gray-700 mb-4">Welcome to the Data Science course! Dive into the world of data science with comprehensive resources and in-depth modules designed for both beginners and professionals.</p>
+
+            <h3 class="text-xl font-semibold text-gray-800 mt-6">Course Overview</h3>
+            <p class="text-gray-700 mt-2">In this course, you will explore:</p>
+            <ul class="list-disc ml-6 mt-4 text-gray-700">
+                <li><a href="https://www.geeksforgeeks.org/data-cleaning-in-data-mining/" target="_blank" class="text-blue-500 hover:text-blue-700">Data cleaning and preprocessing</a></li>
+                <li><a href="https://www.geeksforgeeks.org/data-visualization-in-data-mining/" target="_blank" class="text-blue-500 hover:text-blue-700">Data analysis and visualization</a></li>
+                <li><a href="https://www.geeksforgeeks.org/machine-learning/" target="_blank" class="text-blue-500 hover:text-blue-700">Machine learning algorithms</a></li>
+                <li><a href="https://www.geeksforgeeks.org/statistical-modeling-in-data-mining/" target="_blank" class="text-blue-500 hover:text-blue-700">Statistical modeling</a></li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-800 mt-6">Course Content</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
+                <div>
+                    <h4 class="text-lg font-bold text-gray-800">Module 1: Introduction to Data Science</h4>
+                    <p class="text-gray-700 mt-2">Understand the basics of data science, its importance, and the roles and responsibilities of a data scientist.</p>
+                    <ul class="list-disc ml-6 mt-2 text-gray-700">
+                        <li><a href="https://www.geeksforgeeks.org/introduction-to-data-science/" target="_blank" class="text-blue-500 hover:text-blue-700">Lecture 1: What is Data Science?</a></li>
+                        <li><a href="https://www.geeksforgeeks.org/data-science-lifecycle/" target="_blank" class="text-blue-500 hover:text-blue-700">Lecture 2: Data Science Lifecycle</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold text-gray-800">Module 2: Data Cleaning and Preprocessing</h4>
+                    <p class="text-gray-700 mt-2">Learn how to clean and preprocess data to make it suitable for analysis. This includes handling missing values, removing duplicates, and normalizing data.</p>
+                    <ul class="list-disc ml-6 mt-2 text-gray-700">
+                        <li><a href="https://www.geeksforgeeks.org/data-cleaning-in-data-mining/" target="_blank" class="text-blue-500 hover:text-blue-700">Lecture 1: Data Cleaning Techniques</a></li>
+                        <li><a href="https://www.geeksforgeeks.org/handling-missing-values-in-data/" target="_blank" class="text-blue-500 hover:text-blue-700">Lecture 2: Handling Missing Values</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-blue-900 text-white text-center py-4">
+        <p class="text-white">© 2024 Archimedes Hub. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
